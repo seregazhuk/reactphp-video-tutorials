@@ -1,0 +1,8 @@
+{
+    "require": {
+        "react/socket": "^0.8.11",
+        "symfony/console": "^4.0",
+        "clue/stdio-react": "^2.1",
+        "kevinlebrun/colors.php": "^1.0"
+    }
+}
