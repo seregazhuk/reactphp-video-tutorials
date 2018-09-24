@@ -1,0 +1,7 @@
+{
+    "require": {
+        "react/http": "^0.8.3",
+        "ext-json": "*",
+        "nikic/fast-route": "^1.3"
+    }
+}

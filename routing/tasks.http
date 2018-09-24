@@ -1,0 +1,27 @@
+### List all tasks
+GET 127.0.0.1:8000/tasks
+
+###
+
+### View task
+GET 127.0.0.1:8000/tasks/1
+
+###
+
+### Create a new task (success)
+POST 127.0.0.1:8000/tasks
+Content-Type: application/x-www-form-urlencoded
+
+task=new task
+
+###
+
+### Create a new task (fail)
+POST 127.0.0.1:8000/tasks
+
+###
+
+### Not found
+GET 127.0.0.1:8000/about
+
+###
