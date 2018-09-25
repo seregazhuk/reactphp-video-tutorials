@@ -25,3 +25,4 @@ Contents:
 8. Query Strings [Video](https://youtu.be/NaMmxGJLaB4) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/http)
 9. POST Requests [Video](https://youtu.be/q01-wCZukDk) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/http)
 10. Middleware [video](https://youtu.be/nRMlOrW2rwE) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/middleware)
+11. Using PSR-15 Middleware [video](https://youtu.be/nCys2W8wWcc) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/psr-15-middleware)
