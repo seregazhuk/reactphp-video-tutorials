@@ -24,3 +24,4 @@ Contents:
 7. HTTP Server - Simple HTTP Server [Video](https://youtu.be/iNH3CPZQ_Ms) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/http)
 8. Query Strings [Video](https://youtu.be/NaMmxGJLaB4) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/http)
 9. POST Requests [Video](https://youtu.be/q01-wCZukDk) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/http)
+10. Middleware [video](https://youtu.be/nRMlOrW2rwE) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/middleware)
