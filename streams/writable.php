@@ -4,7 +4,7 @@ require 'vendor/autoload.php';
 
 $loop = \React\EventLoop\Factory::create();
 
-$duplex = new \React\Stream\DuplexResourceStream(STDIN, $loop, null, STDOUT)
+$duplex = new \React\Stream\DuplexResourceStream(STDIN, $loop, null, STDOUT);
 
 $readable = new \React\Stream\ReadableResourceStream(STDIN, $loop);
 $writable = new \React\Stream\WritableResourceStream(STDOUT, $loop);
