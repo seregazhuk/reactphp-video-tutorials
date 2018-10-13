@@ -1,0 +1,7 @@
+{
+    "require": {
+        "clue/buzz-react": "^2.4",
+        "react/filesystem": "^0.1.1",
+        "react/promise-stream": "^1.1.1"
+    }
+}
