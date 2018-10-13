@@ -21,7 +21,7 @@ final class PromiseBasedDownloader
         $this->directory = $directory;
     }
 
-    public function download(array $urls): void
+    public function download(string ...$urls): void
     {
         foreach ($urls as $url) {
             $this->openFileFor($url)->then(
