@@ -2,14 +2,13 @@
 
 require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/Downloader/Downloader.php';
-require __DIR__ . '/Downloader/PromiseBasedDownloader.php';
 
 use Clue\React\Buzz\Browser;
 use React\Filesystem\Filesystem;
 
 $loop = React\EventLoop\Factory::create();
 $client = new Browser($loop);
-$downloader = new PromiseBasedDownloader(
+$downloader = new Downloader(
     $client->withOptions(['streaming' => true]),
     Filesystem::create($loop),
     __DIR__ . '/downloads'
