@@ -27,3 +27,6 @@ Contents:
 10. Middleware [Video](https://youtu.be/nRMlOrW2rwE) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/middleware)
 11. Using PSR-15 Middleware [Video](https://youtu.be/nCys2W8wWcc) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/psr-15-middleware)
 12. Routing [Video](https://youtu.be/qHV0GATf2zY) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/routing)
+
+## Asynchronous HTTP requests
+13. Asynchronous Downloads [Video](https://youtu.be/6Fw0IxK5h54) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/asynchronous-downloads)
