@@ -30,3 +30,6 @@ Contents:
 
 ## Asynchronous HTTP requests
 13. Asynchronous Downloads [Video](https://youtu.be/6Fw0IxK5h54) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/asynchronous-downloads)
+
+## Fast Web Scraping With ReactPHP
+1. Extracting Data From HTML [Video](https://youtu.be/_XYVP5fdt_0) | [Code](https://github.com/seregazhuk/reactphp-video-tutorials/tree/master/scraping-extract-data)
