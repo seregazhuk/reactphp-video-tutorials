@@ -44,9 +44,4 @@ final class Image
             'source' => $this->source,
         ];
     }
-
-    public function filename(): string
-    {
-        return basename($this->source);
-    }
 }

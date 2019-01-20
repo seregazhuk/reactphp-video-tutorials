@@ -5,6 +5,7 @@ namespace AsyncScraper;
 use Clue\React\Buzz\Browser;
 use Psr\Http\Message\ResponseInterface;
 use React\Filesystem\Filesystem;
+use React\Promise\Deferred;
 use React\Promise\PromiseInterface;
 use React\Stream\WritableStreamInterface;
 use function \React\Promise\Stream\UnwrapWritable;
@@ -27,12 +28,18 @@ final class Downloader
     public function download(string $url): PromiseInterface
     {
         $file = $this->openFileFor($url);
+        $deferred = new Deferred();
+        $file->on('close', function () use ($deferred) {
+            $deferred->resolve();
+        });
 
-        return $this->client->get($url)->then(
+        $this->client->get($url)->then(
             function (ResponseInterface $response) use ($file) {
                 $response->getBody()->pipe($file);
             }
         );
+
+        return $deferred->promise();
     }
 
     private function openFileFor(string $url): WritableStreamInterface
