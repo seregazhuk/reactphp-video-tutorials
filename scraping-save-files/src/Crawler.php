@@ -16,14 +16,14 @@ final class Crawler
         $this->browser = $browser;
     }
 
-    public function extractFromUrl($url): PromiseInterface
+    public function extractImageFromUrl($url): PromiseInterface
     {
         return $this->browser->get($url)->then(function (ResponseInterface $response) {
-            return $this->extract((string)$response->getBody());
+            return $this->extractFromHtml((string)$response->getBody());
         });
     }
 
-    private function extract(string $responseBody): Image
+    private function extractFromHtml(string $responseBody): Image
     {
         $crawler = new SymfonyCrawler($responseBody);
         $title = $crawler->filter('h1.box__title')->text();
