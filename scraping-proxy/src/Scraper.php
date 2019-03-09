@@ -2,6 +2,8 @@
 
 namespace AsyncScraper;
 
+use Exception;
+
 final class Scraper
 {
     private $crawler;
@@ -27,6 +29,9 @@ final class Scraper
                 })
                 ->then(function (Image $image) {
                     $this->storage->saveIfNotExist($image);
+                })
+                ->otherwise(function (Exception $exception) {
+                    echo $exception->getMessage() . PHP_EOL;
                 });
         }
     }
