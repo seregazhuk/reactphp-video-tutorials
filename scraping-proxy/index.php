@@ -4,14 +4,15 @@ use Clue\React\Buzz\Browser;
 use React\Filesystem\Filesystem;
 use AsyncScraper\Downloader;
 use React\Socket\Connector;
+use Clue\React\Socks\Client as SocksClient;
 
 require __DIR__ . '/vendor/autoload.php';
 
 $loop = \React\EventLoop\Factory::create();
 
-$proxy = new Clue\React\Socks\Client('125.27.10.209:55448', new Connector($loop));
-
+$proxy = new SocksClient('35.185.64.205:1080', new Connector($loop));
 $browser = new Browser($loop, new Connector($loop, ['tcp' => $proxy]));
+
 $downloader = new Downloader(
     $browser->withOptions(['streaming' => true]),
     Filesystem::create($loop),
