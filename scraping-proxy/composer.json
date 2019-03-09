@@ -1,0 +1,16 @@
+{
+    "require": {
+        "clue/buzz-react": "^2.5",
+        "symfony/dom-crawler": "^4.1",
+        "symfony/css-selector": "^4.1",
+        "react/mysql": "^0.5",
+        "react/filesystem": "^0.1.2",
+        "react/socket": "^1.2",
+        "clue/socks-react": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AsyncScraper\\": "src/"
+        }
+    }
+}
