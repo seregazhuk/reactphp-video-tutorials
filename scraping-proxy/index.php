@@ -10,7 +10,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 $loop = \React\EventLoop\Factory::create();
 
-$proxy = new SocksClient('35.185.64.205:1080', new Connector($loop));
+$proxy = new SocksClient('127.0.0.1:9150', new Connector($loop));
 $browser = new Browser($loop, new Connector($loop, ['tcp' => $proxy]));
 
 $downloader = new Downloader(
