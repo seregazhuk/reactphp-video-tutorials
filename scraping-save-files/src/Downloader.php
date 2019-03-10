@@ -4,11 +4,11 @@ namespace AsyncScraper;
 
 use Clue\React\Buzz\Browser;
 use Psr\Http\Message\ResponseInterface;
-use React\Filesystem\Filesystem;
+use React\Filesystem\FilesystemInterface;
 use React\Promise\Deferred;
 use React\Promise\PromiseInterface;
 use React\Stream\WritableStreamInterface;
-use function \React\Promise\Stream\UnwrapWritable;
+use function React\Promise\Stream\UnwrapWritable;
 
 final class Downloader
 {
@@ -18,7 +18,7 @@ final class Downloader
 
     private $directory;
 
-    public function __construct(Browser $client, Filesystem $filesystem, string $directory)
+    public function __construct(Browser $client, FilesystemInterface $filesystem, string $directory)
     {
         $this->client = $client;
         $this->filesystem = $filesystem;
