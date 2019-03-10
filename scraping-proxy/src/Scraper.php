@@ -22,7 +22,8 @@ final class Scraper
     public function scrape(string ...$urls): void
     {
         foreach ($urls as $url) {
-            $this->crawler->extractImageFromUrl($url)
+            $this->crawler
+                ->extractImageFromUrl($url)
                 ->then(function (Image $image) {
                     $this->downloader->download($image->source);
                     return $image;
